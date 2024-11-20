@@ -15,13 +15,14 @@ def process_stats(stats):
     today_stats = next((day for day in stats_by_day if day["latest_date"] == today_date), None)
 
     content = ""
-    content += f"**Puzzles Solved:** {results['puzzles_solved']}\n"
+    content += f"### NYT Crossword Stats\n"
+    content += f"**Puzzles solved:** {results['puzzles_solved']}\n"
     if today_stats:
         today_label = today_stats["label"]
         today_time = today_stats["latest_time"] / 60
-        content += f"### Today's ({today_label}, {today_date}) Time: {today_time:.1f} minutes\n\n"
+        content += f"#### Today's ({today_label}, {today_date}) Time: {today_time:.1f} minutes\n\n"
     else:
-        content += "### Today's Time: No data available for today.\n\n"
+        content += "#### Haven't done the crossword today yet!\n\n"
 
     return content
 

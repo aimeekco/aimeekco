@@ -7,8 +7,9 @@
 ##
 ![Snake animation](https://github.com/aimeekco/snk/blob/output/github-contribution-grid-snake.svg)
 <!-- START NYT-STATS -->
-**Puzzles Solved:** 76
-### Today's Time: No data available for today.
+### NYT Crossword Stats
+**Puzzles solved:** 76
+### Haven't done the crossword today yet!
 
 
 ![Solve Times](./nyt_stats_graph.png)
