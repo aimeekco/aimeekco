@@ -16,7 +16,7 @@ def process_stats(stats):
 
     content = "## "
     content += f"NYT Crossword Stats\n"
-    content += f"**Puzzles solved:** {results['puzzles_solved']}\n"
+    content += f"**Puzzles solved:** {results['puzzles_solved']}\n\n"
     if today_stats:
         today_label = today_stats["label"]
         today_time = today_stats["latest_time"] / 60
