@@ -8,7 +8,7 @@
 ![Snake animation](https://github.com/aimeekco/snk/blob/output/github-contribution-grid-snake.svg)
 <!-- START NYT-STATS -->
 ## NYT Crossword Stats
-- **Puzzles Solved:** 76
+**Puzzles Solved:** 76
 
 ![Solve Times](./nyt_stats_graph.png)
 <!-- END NYT-STATS -->
