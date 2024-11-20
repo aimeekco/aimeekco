@@ -1,6 +1,7 @@
 import json
 import matplotlib.pyplot as plt
 import numpy as np
+from datetime import datetime
 
 def load_stats():
     with open("nyt_stats.json", "r") as f:
@@ -10,12 +11,11 @@ def process_stats(stats):
     results = stats["results"]["stats"]
     stats_by_day = results["stats_by_day"]
     
-    from datetime import datetime
     today_date = datetime.now().strftime("%Y-%m-%d")
     today_stats = next((day for day in stats_by_day if day["latest_date"] == today_date), None)
 
     content = ""
-
+    content += f"**Puzzles Solved:** {results['puzzles_solved']}\n"
     if today_stats:
         today_label = today_stats["label"]
         today_time = today_stats["latest_time"] / 60
@@ -24,7 +24,6 @@ def process_stats(stats):
         content += "### Today's Time: No data available for today.\n\n"
 
     return content
-
 
 def generate_graphs(stats):
     stats_by_day = stats["results"]["stats"]["stats_by_day"]

@@ -7,6 +7,7 @@
 ##
 ![Snake animation](https://github.com/aimeekco/snk/blob/output/github-contribution-grid-snake.svg)
 <!-- START NYT-STATS -->
+**Puzzles Solved:** 76
 ### Today's Time: No data available for today.
 
 
