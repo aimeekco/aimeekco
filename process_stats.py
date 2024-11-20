@@ -13,14 +13,14 @@ def process_stats(stats):
     # markdown content
     content = "## NYT Crossword Stats\n"
     content += f"- **Puzzles Solved:** {results['puzzles_solved']}\n"
-    content += f"- **Solve Rate:** {results['solve_rate'] * 100:.1f}%\n"
-    content += f"- **Current Streak:** {streaks['current_streak']}\n"
-    content += f"- **Longest Streak:** {streaks['longest_streak']}\n\n"
+    # content += f"- **Solve Rate:** {results['solve_rate'] * 100:.1f}%\n"
+    # content += f"- **Current Streak:** {streaks['current_streak']}\n"
+    # content += f"- **Longest Streak:** {streaks['longest_streak']}\n\n"
 
     # daily solve times
-    content += "### Daily Solve Times\n"
-    for day in results["stats_by_day"]:
-        content += f"- **{day['label']}:** Best: {day['best_time']}s, Avg: {day['avg_time']}s, Latest: {day['latest_time']}s\n"
+    # content += "### Daily Solve Times\n"
+    # for day in results["stats_by_day"]:
+    #     content += f"- **{day['label']}:** Best: {day['best_time']}s, Avg: {day['avg_time']}s, Latest: {day['latest_time']}s\n"
 
     return content
 
