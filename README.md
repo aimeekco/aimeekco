@@ -1,4 +1,4 @@
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=700&color=FFFFFF&width=435&lines=hi+i'm+aimee!;junior+at+harvey+mudd+college;cs+math)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=700&color=FFFFFF&width=435&lines=hi+i'm+aimee!;junior+at+harvey+mudd+college;cs+math+major)
 - i'm a junior at harvey mudd college (prev at pomona college) studying cs + math
 - i've held several project management roles involving full stack development and machine learning
 - my personal website is in progress, but check it out [here](https://aimeekco.github.io)
