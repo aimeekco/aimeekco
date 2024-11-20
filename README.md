@@ -7,9 +7,9 @@
 ![Snake animation](https://github.com/aimeekco/snk/blob/output/github-contribution-grid-snake.svg)
 <!-- START NYT-STATS -->
 ## NYT Crossword Stats
-**Puzzles solved:** 76
+**Puzzles solved:** 77
 
-Haven't done the crossword today yet!
+Today's (Wednesday, 2024-11-20) Time: 5.0 minutes
 
 
 ![Solve Times](./nyt_stats_graph.png)

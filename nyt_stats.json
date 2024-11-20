@@ -3,9 +3,9 @@
         "stats": {
             "longest_avg_time": 1468,
             "longest_latest_time": 1342,
-            "puzzles_attempted": 92,
-            "puzzles_solved": 76,
-            "solve_rate": 0.826,
+            "puzzles_attempted": 93,
+            "puzzles_solved": 77,
+            "solve_rate": 0.828,
             "stats_by_day": [
                 {
                     "avg_denominator": 23,
@@ -28,14 +28,14 @@
                     "this_weeks_time": 443
                 },
                 {
-                    "avg_denominator": 12,
-                    "avg_time": 665,
-                    "best_date": "2024-10-09",
-                    "best_time": 518,
+                    "avg_denominator": 13,
+                    "avg_time": 638,
+                    "best_date": "2024-11-20",
+                    "best_time": 303,
                     "label": "Wednesday",
-                    "latest_date": "2024-11-13",
-                    "latest_time": 764,
-                    "this_weeks_time": 0
+                    "latest_date": "2024-11-20",
+                    "latest_time": 303,
+                    "this_weeks_time": 303
                 },
                 {
                     "avg_denominator": 10,
@@ -80,7 +80,7 @@
             ]
         },
         "streaks": {
-            "current_streak": 1,
+            "current_streak": 2,
             "date_end": "2024-11-20",
             "date_start": "1988-01-01",
             "dates": [
@@ -145,7 +145,8 @@
                     "2024-11-17"
                 ],
                 [
-                    "2024-11-19"
+                    "2024-11-19",
+                    "2024-11-20"
                 ]
             ],
             "longest_streak": 5,
@@ -163,8 +164,8 @@
                     "next_date": ""
                 },
                 {
-                    "length": 2,
-                    "next_date": "2024-11-20"
+                    "length": 3,
+                    "next_date": ""
                 },
                 {
                     "length": 1,
