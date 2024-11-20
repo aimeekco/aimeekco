@@ -14,7 +14,7 @@ def process_stats(stats):
     today_date = datetime.now().strftime("%Y-%m-%d")
     today_stats = next((day for day in stats_by_day if day["latest_date"] == today_date), None)
 
-    content = "##"
+    content = "## "
     content += f"NYT Crossword Stats\n"
     content += f"**Puzzles solved:** {results['puzzles_solved']}\n"
     if today_stats:
