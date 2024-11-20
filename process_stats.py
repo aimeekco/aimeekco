@@ -37,7 +37,7 @@ def generate_graphs(stats):
     bar_width = 0.3
     x = np.arange(len(days))
 
-    plt.figure(figsize=(10, 5), facecolor="#0d1116")
+    plt.figure(figsize=(8, 5), facecolor="#0d1116")
 
     bars1 = plt.bar(x - bar_width, best_times, width=bar_width, color="#4CAF50", alpha=0.8, label="best")
     bars2 = plt.bar(x, latest_times, width=bar_width, color="#2196F3", alpha=0.8, label="today")
