@@ -6,3 +6,5 @@
 - feel free to reach me through aimeekco@gmail.com or my [linkedin](https://www.linkedin.com/in/aimeekco/) :)
 ##
 ![Snake animation](https://github.com/aimeekco/snk/blob/output/github-contribution-grid-snake.svg)
+## NYT Games Stats
+<!-- NYT-STATS -->
