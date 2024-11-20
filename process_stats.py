@@ -35,7 +35,7 @@ def generate_graphs(stats):
     bar_width = 0.3
     x = np.arange(len(days))
 
-    plt.figure(figsize=(10, 5), facecolor="#0D1117")
+    plt.figure(figsize=(10, 5), facecolor="#101414")
 
     bars1 = plt.bar(x - bar_width, best_times, width=bar_width, color="#4CAF50", alpha=0.8, label="best")
     bars2 = plt.bar(x, latest_times, width=bar_width, color="#2196F3", alpha=0.8, label="today")
@@ -57,12 +57,12 @@ def generate_graphs(stats):
     plt.gca().spines['bottom'].set_visible(False)
     plt.gca().yaxis.set_visible(False)
     plt.gca().tick_params(axis='y', which='both', left=False)
-    plt.gca().set_facecolor("#0D1117")
+    plt.gca().set_facecolor("#101414")
 
     plt.tight_layout()
 
     # Save the graph
-    plt.savefig("nyt_stats_graph.png", dpi=300, bbox_inches='tight', facecolor="#0D1117")
+    plt.savefig("nyt_stats_graph.png", dpi=300, bbox_inches='tight', facecolor="#101414")
     print("Graph saved as nyt_stats_graph.png")
 
 if __name__ == "__main__":
