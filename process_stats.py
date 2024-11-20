@@ -8,21 +8,23 @@ def load_stats():
     
 def process_stats(stats):
     results = stats["results"]["stats"]
-    streaks = stats["results"]["streaks"]
+    stats_by_day = results["stats_by_day"]
+    
+    from datetime import datetime
+    today_date = datetime.now().strftime("%Y-%m-%d")
+    today_stats = next((day for day in stats_by_day if day["latest_date"] == today_date), None)
 
-    # markdown content
-    content = "## NYT Crossword Stats\n"
-    content += f"**Puzzles Solved:** {results['puzzles_solved']}\n"
-    # content += f"- **Solve Rate:** {results['solve_rate'] * 100:.1f}%\n"
-    # content += f"- **Current Streak:** {streaks['current_streak']}\n"
-    # content += f"- **Longest Streak:** {streaks['longest_streak']}\n\n"
+    content = ""
 
-    # daily solve times
-    # content += "### Daily Solve Times\n"
-    # for day in results["stats_by_day"]:
-    #     content += f"- **{day['label']}:** Best: {day['best_time']}s, Avg: {day['avg_time']}s, Latest: {day['latest_time']}s\n"
+    if today_stats:
+        today_label = today_stats["label"]
+        today_time = today_stats["latest_time"] / 60
+        content += f"### Today's ({today_label}, {today_date}) Time: {today_time:.1f} minutes\n\n"
+    else:
+        content += "### Today's Time: No data available for today.\n\n"
 
     return content
+
 
 def generate_graphs(stats):
     stats_by_day = stats["results"]["stats"]["stats_by_day"]
@@ -35,10 +37,14 @@ def generate_graphs(stats):
     bar_width = 0.3
     x = np.arange(len(days))
 
-    plt.figure(figsize=(10, 5), facecolor="#101414")
+    plt.figure(figsize=(10, 5), facecolor="#0d1116")
 
     bars1 = plt.bar(x - bar_width, best_times, width=bar_width, color="#4CAF50", alpha=0.8, label="best")
     bars2 = plt.bar(x, latest_times, width=bar_width, color="#2196F3", alpha=0.8, label="today")
+    
+    today_index = days.index("Today") if "Today" in days else -1
+    if today_index != -1:
+        bars2[today_index].set_color("#FF5722")
 
     for bar, time in zip(bars1, best_times):
         plt.text(bar.get_x() + bar.get_width() / 2, bar.get_height() / 2, f"{time:.1f} min",
@@ -57,12 +63,12 @@ def generate_graphs(stats):
     plt.gca().spines['bottom'].set_visible(False)
     plt.gca().yaxis.set_visible(False)
     plt.gca().tick_params(axis='y', which='both', left=False)
-    plt.gca().set_facecolor("#101414")
+    plt.gca().set_facecolor("#0d1116")
 
     plt.tight_layout()
 
     # Save the graph
-    plt.savefig("nyt_stats_graph.png", dpi=300, bbox_inches='tight', facecolor="#101414")
+    plt.savefig("nyt_stats_graph.png", dpi=300, bbox_inches='tight', facecolor="#0d1116")
     print("Graph saved as nyt_stats_graph.png")
 
 if __name__ == "__main__":
