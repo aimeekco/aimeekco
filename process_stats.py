@@ -39,8 +39,8 @@ def generate_graphs(stats):
 
     plt.figure(figsize=(8, 5), facecolor="#0d1116")
 
-    bars1 = plt.bar(x - bar_width, best_times, width=bar_width, color="#4CAF50", alpha=0.8, label="best")
-    bars2 = plt.bar(x, latest_times, width=bar_width, color="#2196F3", alpha=0.8, label="today")
+    bars1 = plt.bar(x - (0.5)*bar_width, best_times, width=bar_width, color="#4CAF50", alpha=0.8, label="best")
+    bars2 = plt.bar(x + (0.5)*bar_width, latest_times, width=bar_width, color="#2196F3", alpha=0.8, label="today")
     
     today_index = days.index("Today") if "Today" in days else -1
     if today_index != -1:
