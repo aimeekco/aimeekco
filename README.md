@@ -12,4 +12,3 @@ Today's (Thursday, 2024-11-21) Time: 12.6 minutes
 
 ![Solve Times](./nyt_stats_graph.png)
 <!-- END NYT-STATS -->
-![Snake animation](https://github.com/aimeekco/snk/blob/output/github-contribution-grid-snake.svg)
