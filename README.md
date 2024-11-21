@@ -3,8 +3,6 @@
 - i've held several project management roles involving full stack development and machine learning
 - my personal website is in progress, but check it out [here](https://aimeekco.github.io)
 - feel free to reach me at aimeekco@gmail.com or my [linkedin](https://www.linkedin.com/in/aimeekco/) :)
-##
-![Snake animation](https://github.com/aimeekco/snk/blob/output/github-contribution-grid-snake.svg)
 <!-- START NYT-STATS -->
 ## NYT Crossword Stats
 **Puzzles solved:** 78
@@ -14,3 +12,4 @@ Today's (Thursday, 2024-11-21) Time: 12.6 minutes
 
 ![Solve Times](./nyt_stats_graph.png)
 <!-- END NYT-STATS -->
+![Snake animation](https://github.com/aimeekco/snk/blob/output/github-contribution-grid-snake.svg)
