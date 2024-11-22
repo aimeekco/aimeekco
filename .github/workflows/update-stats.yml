@@ -1,4 +1,4 @@
-name: Update NYT Stats
+name: update NYT stats
 
 on:
   schedule:
@@ -11,26 +11,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: checkout repository
       uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: "3.x"
-
-    - name: Install dependencies
-      run: pip install requests
-
-    - name: Fetch and Update Stats
+    - name: set up python and install dependencies
       run: |
+        python -m venv myenv
+        source myenv/bin/activate
+        pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: fetch stats and update README
+      run: |
+        source myenv/bin/activate
         python fetch_stats.py
         python update_readme.py
 
-    - name: Commit and Push Changes
+    - name: commit and push changes
       run: |
         git config user.name "aimeekco"
         git config user.email "aimeekco@gmail.com"
         git add README.md
-        git commit -m "Update NYT Stats"
-        git push
+        if ! git diff --cached --quiet; then
+          git commit -m "update NYT stats"
+          git push
+        else
+          echo "no changes to commit"
+        fi
