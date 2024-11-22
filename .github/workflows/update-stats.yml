@@ -16,14 +16,14 @@ jobs:
 
     - name: set up python and install dependencies
       run: |
-        python -m venv myenv
-        source myenv/bin/activate
+        python -m venv $HOME/myenv
+        source $HOME/myenv/bin/activate
         pip install --upgrade pip
         pip install -r requirements.txt
 
     - name: fetch stats and update README
       run: |
-        source myenv/bin/activate
+        source $HOME/myenv/bin/activate
         python fetch_stats.py
         python update_readme.py
 
