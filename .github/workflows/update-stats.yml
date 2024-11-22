@@ -2,8 +2,9 @@ name: Update NYT Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # Runs daily at midnight UTC
-  workflow_dispatch:  # Allows manual trigger
+    - cron: "0 10 * * *"
+    - cron: "0 22 * * *"
+  workflow_dispatch:
 
 jobs:
   update-readme:
@@ -28,8 +29,8 @@ jobs:
 
     - name: Commit and Push Changes
       run: |
-        git config user.name "GitHub Actions"
-        git config user.email "actions@github.com"
+        git config user.name "aimeekco"
+        git config user.email "aimeekco@gmail.com"
         git add README.md
         git commit -m "Update NYT Stats"
         git push
