@@ -28,6 +28,8 @@ jobs:
         python update_readme.py
 
     - name: commit and push changes
+      env:
+        GH_TOKEN: ${{ secrets.MY_GH_TOKEN }}
       run: |
         git config user.name "aimeekco"
         git config user.email "aimeekco@gmail.com"
