@@ -5,9 +5,9 @@
 - feel free to reach me at aimeekco@gmail.com or my [linkedin](https://www.linkedin.com/in/aimeekco/) :)
 <!-- START NYT-STATS -->
 ## NYT Crossword Stats
-**Puzzles solved:** 99
+**Puzzles solved:** 100
 
-Today's (Wednesday, 2024-12-11) Time: 8.1 minutes
+Today's (Thursday, 2024-12-12) Time: 9.9 minutes
 
 
 ![Solve Times](./nyt_stats_graph.png)
