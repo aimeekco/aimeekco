@@ -5,7 +5,7 @@
 - feel free to reach me at aimeekco@gmail.com or my [linkedin](https://www.linkedin.com/in/aimeekco/) :)
 <!-- START NYT-STATS -->
 ## NYT Crossword Stats
-**Puzzles solved:** 127
+**Puzzles solved:** 128
 
 Haven't done the crossword today yet!
 
