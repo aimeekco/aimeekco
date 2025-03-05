@@ -3,7 +3,7 @@
 tinkering enthusiast & nyt games fan :)
 <!-- START NYT-STATS -->
 ## NYT Crossword Stats
-**Puzzles solved:** 160
+**Puzzles solved:** 161
 
 Haven't done the crossword today yet!
 
