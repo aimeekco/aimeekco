@@ -3,9 +3,9 @@
 tinkering enthusiast & nyt games fan :)
 <!-- START NYT-STATS -->
 ## NYT Crossword Stats
-**Puzzles solved:** 485
+**Puzzles solved:** 486
 
-Haven't done the crossword today yet!
+Today's (Friday, 2026-05-08) Time: 8.9 minutes
 
 
 ![Solve Times](./nyt_stats_graph.png)
